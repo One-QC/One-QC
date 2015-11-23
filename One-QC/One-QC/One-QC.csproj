@@ -70,6 +70,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add New Project Member Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Project Member Form.Designer.cs">
+      <DependentUpon>Add New Project Member Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create Project Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Project Form.Designer.cs">
+      <DependentUpon>Create Project Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create Project Tab Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Project Tab Form.Designer.cs">
+      <DependentUpon>Create Project Tab Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateBRD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +95,39 @@
       <DependentUpon>FormCreateBRD.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\iProjectData.cs" />
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ModelProjectData.cs" />
     <Compile Include="Presenter\PresenterProjectData.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Project List Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project List Form.Designer.cs">
+      <DependentUpon>Project List Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add New Project Member Form.resx">
+      <DependentUpon>Add New Project Member Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Project Form.resx">
+      <DependentUpon>Create Project Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Project Tab Form.resx">
+      <DependentUpon>Create Project Tab Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateBRD.resx">
       <DependentUpon>FormCreateBRD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project List Form.resx">
+      <DependentUpon>Project List Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -20,3 +20,6 @@ D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\de\MigraDoc.Do
 D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\de\MigraDoc.Rendering.resources.dll
 D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
 D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\de\PdfSharp.resources.dll
+D:\Kantor\One-QC\One-QC\One-QC\bin\Debug\One-QC.exe.config
+D:\Kantor\One-QC\One-QC\One-QC\obj\Debug\One-QC.exe
+D:\Kantor\One-QC\One-QC\One-QC\obj\Debug\One-QC.pdb
