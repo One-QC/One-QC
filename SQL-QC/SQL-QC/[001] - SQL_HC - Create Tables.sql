@@ -1,0 +1,17 @@
+use SQL_HC
+
+CREATE TABLE HCOfficeData_TM
+(
+	OffID CHAR(5) NOT NULL PRIMARY KEY,
+	OffDivision VARCHAR(100),
+	OffCC CHAR(5)
+);
+
+CREATE TABLE HCEmployeeData_TM
+(
+	EmpID CHAR(5) NOT NULL PRIMARY KEY,
+	EmpName VARCHAR(100),
+	EmpPosition VARCHAR(100),
+	EmpEmail VARCHAR(50),
+	OffID CHAR(5) REFERENCES HCOfficeData_TM(OffID)
+);

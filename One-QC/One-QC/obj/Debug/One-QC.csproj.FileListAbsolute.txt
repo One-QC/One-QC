@@ -1,0 +1,8 @@
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\One-QC.exe
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\bin\Debug\One-QC.pdb
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One-QC.csprojResolveAssemblyReference.cache
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One_QC.FormCreateBRD.resources
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One_QC.Properties.Resources.resources
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One-QC.csproj.GenerateResource.Cache
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One-QC.exe
+D:\Kerja\OCBC NISP\Banking Academy\One-QC\One-QC\One-QC\obj\Debug\One-QC.pdb

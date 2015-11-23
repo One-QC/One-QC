@@ -1,0 +1,109 @@
+use SQL_QC
+
+CREATE TABLE QCProjectData_TM
+(
+	ProID CHAR(10) NOT NULL PRIMARY KEY,
+	ProTitle VARCHAR(100),
+	ProDate DATE,
+	ProBRD VARCHAR(100),
+	ProSFAT VARCHAR(100),
+	ProITRoadMap CHAR(3),
+	EmpIDBA CHAR(5),
+	EmpIDBU CHAR(5)
+);
+
+CREATE TABLE QCBRDVersion_TH
+(
+	Vers VARCHAR(10),
+	VersDate DATE,
+	VersChanges VARCHAR(MAX),
+	EmpIDAuth CHAR(5),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDApproval_TR
+(
+	ApprDate DATE,
+	ApprPosition VARCHAR(50),
+	EmpIDAppr CHAR(5),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDDistribution_TR
+(
+	EmpIDDist CHAR(5),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDGlossary_TR
+(
+	GlosTerm VARCHAR(100),
+	GlosDef VARCHAR(1000),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDContent_TR
+(
+	ContOverview VARCHAR(MAX),
+	ContDependencies VARCHAR(MAX),
+	ContCurrentBFD VARCHAR(MAX),
+	ContCurrentBFDPic VARBINARY(MAX),
+	ContProposedBFD VARCHAR(MAX),
+	ContProposedBFDPic VARBINARY(MAX),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDStakeholder_TR
+(
+	StakeNo INT,
+	StakeName VARCHAR(100),
+	StakeImp VARCHAR(500),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QRBRDData_TR
+(
+	BRID VARCHAR(10),
+	BRDesc VARCHAR(MAX),
+	BRDescPic VARBINARY(MAX),
+	BRRespUnit VARCHAR(500),
+	BRVers VARCHAR(10),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QRBRDReport_TR
+(
+	RepNo INT,
+	RepTitle VARCHAR(500),
+	RepType VARCHAR(5),
+	RepFilterType VARCHAR(500),
+	RepField VARCHAR(500),
+	RepFieldSource VARCHAR(100),
+	RepRemarks VARCHAR(500),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBRDSecurityBackup_TR
+(
+	SecReq VARCHAR(500),
+	SecApplyBRID VARCHAR(100),
+	BRID VARCHAR(10),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCBackupRecovery_TR
+(
+	RecNo INT,
+	RecData VARCHAR(500),
+	RecFreq VARCHAR(100),
+	RecType VARCHAR(100),
+	RecStorage VARCHAR(100),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);
+
+CREATE TABLE QCAssumption_TR
+(
+	AssNo INT,
+	AssCont VARCHAR(MAX),
+	ProID CHAR(10) REFERENCES QCProjectData_TM(ProID)
+);

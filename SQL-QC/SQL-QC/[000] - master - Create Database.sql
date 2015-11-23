@@ -1,0 +1,3 @@
+use master
+
+DROP DATABASE SQL_QC
