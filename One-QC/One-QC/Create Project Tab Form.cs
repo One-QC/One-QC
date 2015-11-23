@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace One_QC
 {
-    public partial class Create_Project_Tab_Form : Form
+    public partial class CreateProjectTabForm : Form
     {
-        public Create_Project_Tab_Form()
+        public CreateProjectTabForm()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace One_QC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Add_New_Project_Member_Form forms = new Add_New_Project_Member_Form();
+            AddNewProjectMemberForm forms = new AddNewProjectMemberForm();
             forms.ShowDialog();
         }
     }

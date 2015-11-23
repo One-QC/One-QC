@@ -14,7 +14,7 @@ namespace One_QC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCreateBRD());
+            Application.Run(new LoginForm());
         }
     }
 }

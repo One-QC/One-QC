@@ -1,6 +1,6 @@
 ﻿namespace One_QC
 {
-    partial class Project_List_Form
+    partial class ProjectListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -90,7 +90,7 @@
             this.panel1.Size = new System.Drawing.Size(579, 248);
             this.panel1.TabIndex = 24;
             // 
-            // Project_List_Form
+            // ProjectListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,8 +101,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Project_List_Form";
-            this.Text = "Project_List_Form";
+            this.Name = "ProjectListForm";
+            this.Text = "ProjectListForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

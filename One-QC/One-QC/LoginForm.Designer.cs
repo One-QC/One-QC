@@ -1,6 +1,6 @@
 ﻿namespace One_QC
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(98, 112);
+            this.btnLogin.Location = new System.Drawing.Point(175, 111);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 5;
@@ -89,7 +89,7 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +100,7 @@
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txbPass);
             this.Controls.Add(this.txbUser);
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.Text = "One-QC Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -76,12 +76,6 @@
     <Compile Include="Add New Project Member Form.Designer.cs">
       <DependentUpon>Add New Project Member Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Create Project Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Create Project Form.Designer.cs">
-      <DependentUpon>Create Project Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Create Project Tab Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,9 +107,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add New Project Member Form.resx">
       <DependentUpon>Add New Project Member Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Create Project Form.resx">
-      <DependentUpon>Create Project Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Create Project Tab Form.resx">
       <DependentUpon>Create Project Tab Form.cs</DependentUpon>

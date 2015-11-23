@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace One_QC
 {
-    public partial class Project_List_Form : Form
+    public partial class ProjectListForm : Form
     {
-        public Project_List_Form()
+        public ProjectListForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Create_Project_Tab_Form forms = new Create_Project_Tab_Form();
+            CreateProjectTabForm forms = new CreateProjectTabForm();
             this.Hide();
             forms.Show();
         }

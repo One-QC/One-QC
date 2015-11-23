@@ -1,6 +1,6 @@
 ﻿namespace One_QC
 {
-    partial class Add_New_Project_Member_Form
+    partial class AddNewProjectMemberForm
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,7 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // Add_New_Project_Member_Form
+            // AddNewProjectMemberForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,8 +100,9 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Add_New_Project_Member_Form";
-            this.Text = "Add_New_Project_Member_Form";
+            this.Name = "AddNewProjectMemberForm";
+            this.Text = "AddNewProjectMemberForm";
+            this.Load += new System.EventHandler(this.Add_New_Project_Member_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
