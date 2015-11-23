@@ -7,5 +7,6 @@ namespace One_QC.Interface
     interface iProjectData
     {
         string strProID { get; set; }
+        string 
     }
 }
