@@ -42,10 +42,10 @@ D:\One-QC\One-QC\One-QC\bin\Debug\de\MigraDoc.Rendering.resources.dll
 D:\One-QC\One-QC\One-QC\bin\Debug\de\MigraDoc.RtfRendering.resources.dll
 D:\One-QC\One-QC\One-QC\bin\Debug\de\PdfSharp.resources.dll
 D:\One-QC\One-QC\One-QC\obj\Debug\One-QC.csprojResolveAssemblyReference.cache
-D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.Add_New_Project_Member_Form.resources
-D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.Create_Project_Tab_Form.resources
 D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.FormCreateBRD.resources
-D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.Form1.resources
-D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.Project_List_Form.resources
 D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.Properties.Resources.resources
 D:\One-QC\One-QC\One-QC\obj\Debug\One-QC.csproj.GenerateResource.Cache
+D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.AddNewProjectMemberForm.resources
+D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.CreateProjectTabForm.resources
+D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.LoginForm.resources
+D:\One-QC\One-QC\One-QC\obj\Debug\One_QC.ProjectListForm.resources

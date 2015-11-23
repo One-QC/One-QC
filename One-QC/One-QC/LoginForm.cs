@@ -29,7 +29,6 @@ namespace One_QC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             if (txbUser.Text.Equals(String.Empty) && txbPass.Text.Equals(String.Empty))
             {
                 MessageBox.Show("User ID dan Password tidak diisi. Silahkan mengisi User ID dan Password Anda.");
@@ -44,6 +43,7 @@ namespace One_QC
             }
             else
             {
+                this.Hide();
                 ProjectListForm projectForm = new ProjectListForm();
                 projectForm.Show();
             }

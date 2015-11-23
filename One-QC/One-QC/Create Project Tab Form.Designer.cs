@@ -31,41 +31,41 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Detail1 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProjectMember = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtCreate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbProjectType = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmbLOB = new System.Windows.Forms.ComboBox();
+            this.txbDivision = new System.Windows.Forms.TextBox();
+            this.txbProjectName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbProjectID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbCDS = new System.Windows.Forms.ComboBox();
+            this.cmbFSD = new System.Windows.Forms.ComboBox();
+            this.cmbBRD = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.dtCDS = new System.Windows.Forms.DateTimePicker();
+            this.CbCDS = new System.Windows.Forms.CheckBox();
+            this.dtFSD = new System.Windows.Forms.DateTimePicker();
+            this.cbFSD = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dtBRD = new System.Windows.Forms.DateTimePicker();
+            this.cbBRD = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Detail1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectMember)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,19 +83,19 @@
             // Detail1
             // 
             this.Detail1.Controls.Add(this.button1);
-            this.Detail1.Controls.Add(this.dataGridView1);
+            this.Detail1.Controls.Add(this.dgvProjectMember);
             this.Detail1.Controls.Add(this.label8);
-            this.Detail1.Controls.Add(this.dateTimePicker1);
+            this.Detail1.Controls.Add(this.dtCreate);
             this.Detail1.Controls.Add(this.label7);
-            this.Detail1.Controls.Add(this.comboBox2);
+            this.Detail1.Controls.Add(this.cmbProjectType);
             this.Detail1.Controls.Add(this.label6);
             this.Detail1.Controls.Add(this.label5);
             this.Detail1.Controls.Add(this.label4);
-            this.Detail1.Controls.Add(this.comboBox1);
-            this.Detail1.Controls.Add(this.textBox4);
-            this.Detail1.Controls.Add(this.textBox2);
+            this.Detail1.Controls.Add(this.cmbLOB);
+            this.Detail1.Controls.Add(this.txbDivision);
+            this.Detail1.Controls.Add(this.txbProjectName);
             this.Detail1.Controls.Add(this.label3);
-            this.Detail1.Controls.Add(this.textBox1);
+            this.Detail1.Controls.Add(this.txbProjectID);
             this.Detail1.Controls.Add(this.label2);
             this.Detail1.Location = new System.Drawing.Point(4, 22);
             this.Detail1.Name = "Detail1";
@@ -115,13 +115,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dgvProjectMember
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 271);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(584, 150);
-            this.dataGridView1.TabIndex = 35;
+            this.dgvProjectMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProjectMember.Location = new System.Drawing.Point(24, 271);
+            this.dgvProjectMember.Name = "dgvProjectMember";
+            this.dgvProjectMember.Size = new System.Drawing.Size(584, 150);
+            this.dgvProjectMember.TabIndex = 35;
             // 
             // label8
             // 
@@ -132,12 +132,12 @@
             this.label8.TabIndex = 34;
             this.label8.Text = "Project Member :";
             // 
-            // dateTimePicker1
+            // dtCreate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(161, 205);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(448, 20);
-            this.dateTimePicker1.TabIndex = 33;
+            this.dtCreate.Location = new System.Drawing.Point(161, 205);
+            this.dtCreate.Name = "dtCreate";
+            this.dtCreate.Size = new System.Drawing.Size(448, 20);
+            this.dtCreate.TabIndex = 33;
             // 
             // label7
             // 
@@ -148,13 +148,13 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Project Creation Date :";
             // 
-            // comboBox2
+            // cmbProjectType
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(120, 97);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(488, 21);
-            this.comboBox2.TabIndex = 31;
+            this.cmbProjectType.FormattingEnabled = true;
+            this.cmbProjectType.Location = new System.Drawing.Point(120, 97);
+            this.cmbProjectType.Name = "cmbProjectType";
+            this.cmbProjectType.Size = new System.Drawing.Size(488, 21);
+            this.cmbProjectType.TabIndex = 31;
             // 
             // label6
             // 
@@ -183,27 +183,27 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "LOB :";
             // 
-            // comboBox1
+            // cmbLOB
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(120, 133);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(488, 21);
-            this.comboBox1.TabIndex = 27;
+            this.cmbLOB.FormattingEnabled = true;
+            this.cmbLOB.Location = new System.Drawing.Point(120, 133);
+            this.cmbLOB.Name = "cmbLOB";
+            this.cmbLOB.Size = new System.Drawing.Size(488, 21);
+            this.cmbLOB.TabIndex = 27;
             // 
-            // textBox4
+            // txbDivision
             // 
-            this.textBox4.Location = new System.Drawing.Point(120, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(488, 20);
-            this.textBox4.TabIndex = 26;
+            this.txbDivision.Location = new System.Drawing.Point(120, 170);
+            this.txbDivision.Name = "txbDivision";
+            this.txbDivision.Size = new System.Drawing.Size(488, 20);
+            this.txbDivision.TabIndex = 26;
             // 
-            // textBox2
+            // txbProjectName
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(489, 20);
-            this.textBox2.TabIndex = 25;
+            this.txbProjectName.Location = new System.Drawing.Point(120, 60);
+            this.txbProjectName.Name = "txbProjectName";
+            this.txbProjectName.Size = new System.Drawing.Size(489, 20);
+            this.txbProjectName.TabIndex = 25;
             // 
             // label3
             // 
@@ -214,12 +214,12 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Project Name :";
             // 
-            // textBox1
+            // txbProjectID
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(489, 20);
-            this.textBox1.TabIndex = 23;
+            this.txbProjectID.Location = new System.Drawing.Point(120, 26);
+            this.txbProjectID.Name = "txbProjectID";
+            this.txbProjectID.Size = new System.Drawing.Size(489, 20);
+            this.txbProjectID.TabIndex = 23;
             // 
             // label2
             // 
@@ -245,46 +245,46 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.comboBox5);
-            this.panel1.Controls.Add(this.comboBox4);
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.cmbCDS);
+            this.panel1.Controls.Add(this.cmbFSD);
+            this.panel1.Controls.Add(this.cmbBRD);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.dateTimePicker4);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.dateTimePicker3);
-            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.dtCDS);
+            this.panel1.Controls.Add(this.CbCDS);
+            this.panel1.Controls.Add(this.dtFSD);
+            this.panel1.Controls.Add(this.cbFSD);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.dtBRD);
+            this.panel1.Controls.Add(this.cbBRD);
             this.panel1.Location = new System.Drawing.Point(22, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(592, 129);
             this.panel1.TabIndex = 3;
             // 
-            // comboBox5
+            // cmbCDS
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(442, 80);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(130, 21);
-            this.comboBox5.TabIndex = 10;
+            this.cmbCDS.FormattingEnabled = true;
+            this.cmbCDS.Location = new System.Drawing.Point(442, 80);
+            this.cmbCDS.Name = "cmbCDS";
+            this.cmbCDS.Size = new System.Drawing.Size(130, 21);
+            this.cmbCDS.TabIndex = 10;
             // 
-            // comboBox4
+            // cmbFSD
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(442, 48);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(130, 21);
-            this.comboBox4.TabIndex = 9;
+            this.cmbFSD.FormattingEnabled = true;
+            this.cmbFSD.Location = new System.Drawing.Point(442, 48);
+            this.cmbFSD.Name = "cmbFSD";
+            this.cmbFSD.Size = new System.Drawing.Size(130, 21);
+            this.cmbFSD.TabIndex = 9;
             // 
-            // comboBox3
+            // cmbBRD
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(442, 11);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(130, 21);
-            this.comboBox3.TabIndex = 8;
+            this.cmbBRD.FormattingEnabled = true;
+            this.cmbBRD.Location = new System.Drawing.Point(442, 11);
+            this.cmbBRD.Name = "cmbBRD";
+            this.cmbBRD.Size = new System.Drawing.Size(130, 21);
+            this.cmbBRD.TabIndex = 8;
             // 
             // label12
             // 
@@ -304,39 +304,39 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "Deadline :";
             // 
-            // dateTimePicker4
+            // dtCDS
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(160, 81);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(259, 20);
-            this.dateTimePicker4.TabIndex = 6;
+            this.dtCDS.Location = new System.Drawing.Point(160, 81);
+            this.dtCDS.Name = "dtCDS";
+            this.dtCDS.Size = new System.Drawing.Size(259, 20);
+            this.dtCDS.TabIndex = 6;
             // 
-            // checkBox3
+            // CbCDS
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 84);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(48, 17);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "CDS";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.CbCDS.AutoSize = true;
+            this.CbCDS.Location = new System.Drawing.Point(12, 84);
+            this.CbCDS.Name = "CbCDS";
+            this.CbCDS.Size = new System.Drawing.Size(48, 17);
+            this.CbCDS.TabIndex = 5;
+            this.CbCDS.Text = "CDS";
+            this.CbCDS.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker3
+            // dtFSD
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(160, 45);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(259, 20);
-            this.dateTimePicker3.TabIndex = 6;
+            this.dtFSD.Location = new System.Drawing.Point(160, 45);
+            this.dtFSD.Name = "dtFSD";
+            this.dtFSD.Size = new System.Drawing.Size(259, 20);
+            this.dtFSD.TabIndex = 6;
             // 
-            // checkBox2
+            // cbFSD
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(12, 48);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(47, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "FSD";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbFSD.AutoSize = true;
+            this.cbFSD.Location = new System.Drawing.Point(12, 48);
+            this.cbFSD.Name = "cbFSD";
+            this.cbFSD.Size = new System.Drawing.Size(47, 17);
+            this.cbFSD.TabIndex = 5;
+            this.cbFSD.Text = "FSD";
+            this.cbFSD.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -348,22 +348,22 @@
             this.label10.Text = "Deadline :";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // dateTimePicker2
+            // dtBRD
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(160, 10);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(259, 20);
-            this.dateTimePicker2.TabIndex = 3;
+            this.dtBRD.Location = new System.Drawing.Point(160, 10);
+            this.dtBRD.Name = "dtBRD";
+            this.dtBRD.Size = new System.Drawing.Size(259, 20);
+            this.dtBRD.TabIndex = 3;
             // 
-            // checkBox1
+            // cbBRD
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 13);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "BRD";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbBRD.AutoSize = true;
+            this.cbBRD.Location = new System.Drawing.Point(12, 13);
+            this.cbBRD.Name = "cbBRD";
+            this.cbBRD.Size = new System.Drawing.Size(49, 17);
+            this.cbBRD.TabIndex = 2;
+            this.cbBRD.Text = "BRD";
+            this.cbBRD.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -374,23 +374,23 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Documents";
             // 
-            // button3
+            // btnCancel
             // 
-            this.button3.Location = new System.Drawing.Point(481, 527);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(481, 527);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 38;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnOK
             // 
-            this.button2.Location = new System.Drawing.Point(574, 526);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "OK";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnOK.Location = new System.Drawing.Point(574, 526);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 37;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -408,8 +408,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 557);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "CreateProjectTabForm";
@@ -418,7 +418,7 @@
             this.tabControl1.ResumeLayout(false);
             this.Detail1.ResumeLayout(false);
             this.Detail1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProjectMember)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -433,37 +433,37 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Detail1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProjectMember;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtCreate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbProjectType;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmbLOB;
+        private System.Windows.Forms.TextBox txbDivision;
+        private System.Windows.Forms.TextBox txbProjectName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbProjectID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DateTimePicker dtBRD;
+        private System.Windows.Forms.CheckBox cbBRD;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbCDS;
+        private System.Windows.Forms.ComboBox cmbFSD;
+        private System.Windows.Forms.ComboBox cmbBRD;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.DateTimePicker dtCDS;
+        private System.Windows.Forms.CheckBox CbCDS;
+        private System.Windows.Forms.DateTimePicker dtFSD;
+        private System.Windows.Forms.CheckBox cbFSD;
     }
 }
