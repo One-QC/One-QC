@@ -30,7 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Detail1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddNewMember = new System.Windows.Forms.Button();
             this.dgvProjectMember = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.dtCreate = new System.Windows.Forms.DateTimePicker();
@@ -47,9 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbCDS = new System.Windows.Forms.ComboBox();
-            this.cmbFSD = new System.Windows.Forms.ComboBox();
-            this.cmbBRD = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dtCDS = new System.Windows.Forms.DateTimePicker();
@@ -82,7 +79,7 @@
             // 
             // Detail1
             // 
-            this.Detail1.Controls.Add(this.button1);
+            this.Detail1.Controls.Add(this.btnAddNewMember);
             this.Detail1.Controls.Add(this.dgvProjectMember);
             this.Detail1.Controls.Add(this.label8);
             this.Detail1.Controls.Add(this.dtCreate);
@@ -105,15 +102,15 @@
             this.Detail1.Text = "Detail 1";
             this.Detail1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAddNewMember
             // 
-            this.button1.Location = new System.Drawing.Point(499, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 23);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Add New Member";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddNewMember.Location = new System.Drawing.Point(499, 239);
+            this.btnAddNewMember.Name = "btnAddNewMember";
+            this.btnAddNewMember.Size = new System.Drawing.Size(109, 23);
+            this.btnAddNewMember.TabIndex = 36;
+            this.btnAddNewMember.Text = "Add New Member";
+            this.btnAddNewMember.UseVisualStyleBackColor = true;
+            this.btnAddNewMember.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvProjectMember
             // 
@@ -144,9 +141,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(24, 211);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 13);
+            this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 32;
-            this.label7.Text = "Project Creation Date :";
+            this.label7.Text = "Project Start Date :";
             // 
             // cmbProjectType
             // 
@@ -245,9 +242,6 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cmbCDS);
-            this.panel1.Controls.Add(this.cmbFSD);
-            this.panel1.Controls.Add(this.cmbBRD);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.dtCDS);
@@ -261,30 +255,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(592, 129);
             this.panel1.TabIndex = 3;
-            // 
-            // cmbCDS
-            // 
-            this.cmbCDS.FormattingEnabled = true;
-            this.cmbCDS.Location = new System.Drawing.Point(442, 80);
-            this.cmbCDS.Name = "cmbCDS";
-            this.cmbCDS.Size = new System.Drawing.Size(130, 21);
-            this.cmbCDS.TabIndex = 10;
-            // 
-            // cmbFSD
-            // 
-            this.cmbFSD.FormattingEnabled = true;
-            this.cmbFSD.Location = new System.Drawing.Point(442, 48);
-            this.cmbFSD.Name = "cmbFSD";
-            this.cmbFSD.Size = new System.Drawing.Size(130, 21);
-            this.cmbFSD.TabIndex = 9;
-            // 
-            // cmbBRD
-            // 
-            this.cmbBRD.FormattingEnabled = true;
-            this.cmbBRD.Location = new System.Drawing.Point(442, 11);
-            this.cmbBRD.Name = "cmbBRD";
-            this.cmbBRD.Size = new System.Drawing.Size(130, 21);
-            this.cmbBRD.TabIndex = 8;
             // 
             // label12
             // 
@@ -391,6 +361,7 @@
             this.btnOK.TabIndex = 37;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // label1
             // 
@@ -435,7 +406,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddNewMember;
         private System.Windows.Forms.DataGridView dgvProjectMember;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtCreate;
@@ -456,9 +427,6 @@
         private System.Windows.Forms.DateTimePicker dtBRD;
         private System.Windows.Forms.CheckBox cbBRD;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbCDS;
-        private System.Windows.Forms.ComboBox cmbFSD;
-        private System.Windows.Forms.ComboBox cmbBRD;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dtCDS;
