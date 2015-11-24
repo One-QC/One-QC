@@ -88,6 +88,7 @@
     <Compile Include="FormCreateBRD.Designer.cs">
       <DependentUpon>FormCreateBRD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\iNewProject.cs" />
     <Compile Include="Interface\iProjectData.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -95,7 +96,9 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ModelNewProject.cs" />
     <Compile Include="Model\ModelProjectData.cs" />
+    <Compile Include="Presenter\PresenterNewProject.cs" />
     <Compile Include="Presenter\PresenterProjectData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project List Form.cs">
