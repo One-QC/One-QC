@@ -31,15 +31,15 @@ namespace One_QC
         {
             if (txbUser.Text.Equals(String.Empty) && txbPass.Text.Equals(String.Empty))
             {
-                MessageBox.Show("User ID dan Password tidak diisi. Silahkan mengisi User ID dan Password Anda.");
+                MessageBox.Show("User ID and Password is empty. Please fill the textbox.");
             }
             else if (txbUser.Text.Equals(String.Empty))
             {
-                MessageBox.Show("User ID tidak diisi. Silahkan mengisi User ID Anda.");
+                MessageBox.Show("User ID is empty. Please fill the textbox.");
             }
             else if (txbPass.Text.Equals(String.Empty))
             {
-                MessageBox.Show("Password tidak diisi. Silahkan mengisi Password Anda.");
+                MessageBox.Show("Password is empty. Please fill the textbox.");
             }
             else
             {
