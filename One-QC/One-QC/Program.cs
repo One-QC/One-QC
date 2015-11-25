@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace One_QC
@@ -12,9 +13,19 @@ namespace One_QC
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            
+            string ConnectionString = One_QC.Properties.Settings.Default.SQL_OneQCConnectionString;
+
+
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new LoginForm());
+
+            }
         }
     }
 }

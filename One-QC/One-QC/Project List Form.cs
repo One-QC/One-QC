@@ -28,5 +28,55 @@ namespace One_QC
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label51_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabDetail_Click(object sender, EventArgs e)
+        {
+            tabDetail.Focus();
+        }
+
+        private void label60_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label51_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label66_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label64_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label65_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

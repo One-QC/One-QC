@@ -16,5 +16,12 @@ namespace One_QC.Presenter
             this.mNewProject = new Model.ModelNewProject();
             this.iNProject = intNProject;
         }
+
+
+
+
     }
+
+
+    
 }

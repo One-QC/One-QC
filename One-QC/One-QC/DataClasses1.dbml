@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SQL_OneQC" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SQL_OneQC;Integrated Security=True" SettingsObjectName="One_QC.Properties.Settings" SettingsPropertyName="SQL_OneQCConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.QCAssumption_TM" Member="QCAssumption_TMs">
+    <Type Name="QCAssumption_TM">
+      <Column Name="IDAssumption" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Assumption" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCBackUpRecovery_TM" Member="QCBackUpRecovery_TMs">
+    <Type Name="QCBackUpRecovery_TM">
+      <Column Name="IDBackUpRecovery" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Frequency" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="TypeOfBackUp" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Storage" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCVesion_TM" Member="QCVesion_TMs">
+    <Type Name="QCVesion_TM">
+      <Column Name="IDVersion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Author" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IssueDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Changes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCBRD_TM" Member="QCBRD_TMs">
+    <Type Name="QCBRD_TM">
+      <Column Name="IDBRD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProject" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Tanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BRD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SFAT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ProectID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITRoadMap" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="POName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="POEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PODivision" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="POOfficeID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="POCostCenter" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="POverviewBG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PDependencies" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Appendix" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCCDS_TM" Member="QCCDS_TMs">
+    <Type Name="QCCDS_TM">
+      <Column Name="IDCDS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProject" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CDSNumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DCCDocVer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCCDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DCCName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCCSummary" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Objectives" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Scope" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ApplicationScript" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Topology" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="OtherInfo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCCurrentBFD_TM" Member="QCCurrentBFD_TMs">
+    <Type Name="QCCurrentBFD_TM">
+      <Column Name="IDCurrentBFD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gambar" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCDistributionList_TM" Member="QCDistributionList_TMs">
+    <Type Name="QCDistributionList_TM">
+      <Column Name="IDDistList" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BusinessUnit" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCFSD_TM" Member="QCFSD_TMs">
+    <Type Name="QCFSD_TM">
+      <Column Name="IDFSD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDProject" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DCCVersion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCCDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DCCName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCCSummary" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Objectives" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Scope" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Topology" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MenuRelation" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="DBDiagram" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="JobOrBatch" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Parameter" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TestScenario" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="OtherInfo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TanggalBuat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TanggalApprove" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TanggalUpload" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Pembuat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCGlossary_TM" Member="QCGlossary_TMs">
+    <Type Name="QCGlossary_TM">
+      <Column Name="IDGlossary" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Term" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Definition" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCHakAkses_TR" Member="QCHakAkses_TRs">
+    <Type Name="QCHakAkses_TR">
+      <Column Name="IDHakAkses" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDUser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDRole" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDProject" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCLOB_TM" Member="QCLOB_TMs">
+    <Type Name="QCLOB_TM">
+      <Column Name="IDLOB" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCNegativeScenario_TM" Member="QCNegativeScenario_TMs">
+    <Type Name="QCNegativeScenario_TM">
+      <Column Name="IDNegativeScenario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Scenario" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDCDS" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mandatory" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCPositiveScenario_TM" Member="QCPositiveScenario_TMs">
+    <Type Name="QCPositiveScenario_TM">
+      <Column Name="IDPositiveScenario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCDS" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Scenario" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mandatory" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCProject_TM" Member="QCProject_TMs">
+    <Type Name="QCProject_TM">
+      <Column Name="IDProject" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaProject" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TanggalMulai" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TanggalAkhir" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NamaAplikasi" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JenisProject" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Divisi" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDLOB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TanggalBRD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TanggalFSD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TanggalCDS" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCProposedReport_TM" Member="QCProposedReport_TMs">
+    <Type Name="QCProposedReport_TM">
+      <Column Name="IDProposedReport" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ReportTittle" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ReportType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FilterType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Information" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SourceOfField" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCRequirement_TM" Member="QCRequirement_TMs">
+    <Type Name="QCRequirement_TM">
+      <Column Name="IDRequirement" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BusReqID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BusReqDesc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResponsibleBisUnit" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCRole_TM" Member="QCRole_TMs">
+    <Type Name="QCRole_TM">
+      <Column Name="IDRole" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaRole" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCSecurityBackUp_TM" Member="QCSecurityBackUp_TMs">
+    <Type Name="QCSecurityBackUp_TM">
+      <Column Name="IDSecurityBackUp" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BusinessReqID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SecurityReq" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ApplyBusReq" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCSolution_TM" Member="QCSolution_TMs">
+    <Type Name="QCSolution_TM">
+      <Column Name="IDSolution" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HandlesBRID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FlowGambar" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FlowTulisan" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TableReference" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SPReference" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Client" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="TibcoServices" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Simulation" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDFSD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCStakeholder_TM" Member="QCStakeholder_TMs">
+    <Type Name="QCStakeholder_TM">
+      <Column Name="IDStakeholder" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Stakerholder" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Implication" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDBRD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QCUser_TM" Member="QCUser_TMs">
+    <Type Name="QCUser_TM">
+      <Column Name="IDUser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NIK" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="IDLOB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LoginID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

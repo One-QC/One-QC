@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace One_QC
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : Form , Interface.iLogin
     {
+        Presenter.PresenterLogin presLogin;
+
         public LoginForm()
         {
+            presLogin = new Presenter.PresenterLogin(this);
             InitializeComponent();
         }
 
@@ -26,6 +29,10 @@ namespace One_QC
         {
 
         }
+
+
+        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,9 +50,35 @@ namespace One_QC
             }
             else
             {
+                DataSet ds = this.presLogin.loginAuthentication();
+                MessageBox.Show(ds.Tables[0].Rows[0][0].ToString());
                 this.Hide();
                 ProjectListForm projectForm = new ProjectListForm();
                 projectForm.Show();
+            }
+        }
+
+        public string userID
+        {
+            get
+            {
+                return txbUser.Text;
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string password
+        {
+            get
+            {
+                return txbPass.Text;
+            }
+            set
+            {
+                throw new NotImplementedException();
             }
         }
     }

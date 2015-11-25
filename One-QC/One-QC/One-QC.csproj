@@ -64,6 +64,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -82,12 +83,18 @@
     <Compile Include="Create Project Tab Form.Designer.cs">
       <DependentUpon>Create Project Tab Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateBRD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCreateBRD.Designer.cs">
       <DependentUpon>FormCreateBRD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\iLogin.cs" />
     <Compile Include="Interface\iNewProject.cs" />
     <Compile Include="Interface\iProjectData.cs" />
     <Compile Include="LoginForm.cs">
@@ -96,8 +103,10 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ModelLogin.cs" />
     <Compile Include="Model\ModelNewProject.cs" />
     <Compile Include="Model\ModelProjectData.cs" />
+    <Compile Include="Presenter\PresenterLogin.cs" />
     <Compile Include="Presenter\PresenterNewProject.cs" />
     <Compile Include="Presenter\PresenterProjectData.cs" />
     <Compile Include="Program.cs" />
@@ -114,6 +123,9 @@
     <EmbeddedResource Include="Create Project Tab Form.resx">
       <DependentUpon>Create Project Tab Form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="FormCreateBRD.resx">
       <DependentUpon>FormCreateBRD.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +146,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -144,7 +161,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
